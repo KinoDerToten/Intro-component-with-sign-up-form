@@ -39,6 +39,7 @@ body {
   display: flex;
   justify-content: center;
   flex-direction: column;
+  align-items: center;
 }
 
 .disclaimer h1 {
@@ -46,6 +47,7 @@ body {
   font-size: 3.5rem;
   line-height: 1.3;
   margin-bottom: 25px;
+  width: 70%;
 }
 
 .disclaimer p {
@@ -59,10 +61,12 @@ body {
   max-width: 720px;
   display: flex;
   flex-direction: column;
+  align-items: center;
 }
 
 .banner-commerce {
-  width: 550px;
+  width: 100%;
+  max-width: 550px;
   background-color: var(--accent);
   text-align: center;
   padding: 15px;
@@ -165,4 +169,92 @@ small {
 .form-group.error .icon-error,
 .form-group.error small {
   visibility: visible;
+}
+
+@media screen and (max-width: 1104px) {
+  .container {
+    padding: 20px;
+  }
+
+  .disclaimer h1 {
+    width: 100%;
+    text-align: center;
+    font-size: 3rem;
+  }
+
+  .disclaimer p {
+    width: 100%;
+    text-align: center;
+  }
+
+  .banner-commerce {
+    max-width: 400px;
+  }
+
+  form {
+    max-width: 400px;
+  }
+}
+
+@media screen and (max-width: 872px) {
+  body {
+    height: 100%;
+  }
+
+  .container {
+    flex-direction: column;
+    align-items: center;
+    padding: 50px 20px;
+  }
+
+  .disclaimer {
+    width: 100%;
+    margin-bottom: 50px;
+  }
+
+  .disclaimer h1 {
+    font-size: 2rem;
+    text-align: center;
+    width: 100%;
+  }
+
+  .disclaimer p {
+    width: 100%;
+    text-align: center;
+  }
+
+  .form {
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 375px) {
+  body {
+    height: 100%;
+  }
+
+  .container {
+    flex-direction: column;
+    padding: 50px 20px;
+  }
+
+  .disclaimer {
+    width: 100%;
+    margin-bottom: 50px;
+  }
+
+  .disclaimer h1 {
+    font-size: 2rem;
+    text-align: center;
+    width: 100%;
+  }
+
+  .disclaimer p {
+    width: 100%;
+    text-align: center;
+  }
+
+  .form {
+    width: 100%;
+  }
 }
